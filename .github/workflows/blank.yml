@@ -30,11 +30,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
 
       # Runs a single command using the runners shell
-      - name: Mostrar variables de entorno
-        run: "Plataforma: ${{env.plataform}} "
+      # - name: Mostrar variables de entorno
+      #  run: "Plataforma: ${{env.plataform}} "
 
       # Runs a set of commands using the runners shell
-      - name: Mostrar un mensaje en multiples lineas
+      - name: Mostrar un mensaje de las variables
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo "Valor de la plataforma: ${{env.plataform}}"
+          echo "Valor de la plataforma: ${{env.region}}"
+          echo "Valor de la plataforma: ${{env.account}}"
