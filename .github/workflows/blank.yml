@@ -37,5 +37,5 @@ jobs:
       - name: Mostrar un mensaje de las variables
         run: |
           echo "Valor de la plataforma: ${{env.plataform}}"
-          echo "Valor de la plataforma: ${{env.region}}"
-          echo "Valor de la plataforma: ${{env.account}}"
+          echo "Valor de la region: ${{env.region}}"
+          echo "Valor de la vuenta: ${{env.account}}"
